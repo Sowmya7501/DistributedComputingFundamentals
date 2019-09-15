@@ -1,0 +1,9 @@
+docker pull nginx
+docker run -it -p 89:89 --name nginx67 nginx
+docker run -d -p 89:89 --name nginx67 nginx
+dovker start nginx67
+docker ps
+docker exec -it nginx67 bash
+cd usr/share/nginx/html/
+cat index.html
+exit
